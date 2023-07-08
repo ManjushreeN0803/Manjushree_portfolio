@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"
+    <meta name="viweport" content="width=device-width",initial-scale="1.0">
+    <title>Manjushree - Portfolio</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img  src="images/logo.png.jpg" sizes="70" class="logo">
+                <ul>
+                    <li><a href="#" >Home</a></li>
+                    <li><a href="#" >About</a></li>
+                    <li><a href="#" >Projects</a></li>
+                    <li><a href="#" >Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p> Bachelor of Computer Science and Engineering</p>
+                <h1>Hi,I'm Manjushree Narasimhan</h1>
+            </div>
+        </div>
+    </div>
+    <!-------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png.jpg" alt="User">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title" > About Me</h1>
+                <p  style="font-size: 18px; margin-top: 20px;">Organized and dependable candidate successful at managing multiple 
+                    priorities with a positive attitude. Willingness to take on added 
+                    responsibilities to meet team goals.</p>
+
+                    <div class="tab-titles">
+                       <p class="tab-links active-link" onclick="opentab('education')">Education </p> 
+                       <p class="tab-links" onclick="opentab('skills')">Skills </p> 
+                       <p class="tab-links" onclick="opentab('projects')">Projects</p> 
+
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                     <ul>
+                        <li><span>Bachelor of Computer Science and Engineering</span><br>2021-Present</li>
+                        <li><span>Class XII</span><br>2020-2021</li>
+                        <li><span>Class X</span><br>2018-2019</li>
+                     </ul>   
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                           <li><span>C</span><br></li>
+                           <li><span>Python</span><br></li>
+                           <li><span>Java</span><br></li>
+                           <li><span>HTML</span><br></li>
+                           <li><span>CSS</span><br></li>
+                        </ul>   
+                       </div>
+                       <div class="tab-contents" id="projects">
+                        <ul>
+                           <li><span>Digitalized Secure Banking</span><br>Java Class Creation and Database Connection</li>
+                           <li><span>Chat Nexus</span><br>AI ChatBot</li>
+                        </ul>   
+                       </div>
+            </div>
+        </div>
+
+    </div>
+</div>        
+
+
+    </div>
+
+
+<!------------------projects-------------------->
+<div id="projects">
+    <div class="container">
+        <center><h1 class="sub-title" >My Work</h1></center>
+        <div class="work-list">
+            <div class="work" >
+                <img src="images/project1.png"  alt="Banking Image">
+                <div class="layer">
+                    <h3> Digitalized Secure Banking Application</h3>
+                    <p>Security in Digital Banking using Aadhar Number.This project is built using C</p>
+                        <ul >
+                            <li> JAVA programming for Class creation</li> 
+                            <li>MYSQL for Database Creation</li> 
+                            <li>JDBC for Database connection</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project2.png" alt="AI chatbot Image">
+                <div class="layer">
+                    <h3> Chat Nexus - AI ChatBot</h3>
+                    <p>It uses artificial intelligence (AI) and natural language processing (NLP) to understand customer questions and automate responses to them, simulating human conversations</p>
+                    
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn"> See more</a>
+
+    </div>
+</div>
+<!--------------------contact-------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class='bx bx-send'></i>manjushree.n2021cseb@sece.ac.in</p>
+                <p><i class='bx bxs-phone'></i>9789394437</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/"><i class="fab fa-linkedin"></a>
+                        <a href="https://github.com/"><i class="fab fa-github"></a>  
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"> Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+
+</script>
+    
+</body>
+</html>
